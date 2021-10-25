@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  get 'pages/text'
-  get 'pages/text_mac'
-  get 'pages/text_mac_practice'
-  get 'pages/text_mac_test'
-  get 'pages/text_win'
-  get 'pages/text_win_practice'
-  get 'pages/text_win_test'
+  root 'pages#home'
+  get '/text', to: 'pages#text'
+  get '/text_mac', to: 'pages#text_mac'
+  get '/text_mac_practice', to: 'pages#text_mac_practice'
+  get '/text_mac_test', to: 'pages#text_mac_test'
+  get '/text_win', to: 'pages#text_win'
+  get '/text_win_practice', to: 'pages#text_win_practice'
+  get '/text_win_test', to: 'pages#text_win_test'
 
 end
