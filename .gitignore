@@ -21,3 +21,7 @@
 /yarn-error.log
 
 .byebug_history
+
+# 設計図
+/データベース設計.dio
+/画面遷移図.dio
