@@ -7,5 +7,4 @@ Rails.application.routes.draw do
   get '/text_win', to: 'pages#text_win'
   get '/text_win_practice', to: 'pages#text_win_practice'
   get '/text_win_test', to: 'pages#text_win_test'
-
 end
