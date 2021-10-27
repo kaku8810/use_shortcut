@@ -152,15 +152,15 @@ $(window).keydown(function(event){ //キーが押されたら
     event.preventDefault(); //ブラウザのショートカットを無効
     if (event.key == 'n' && event.ctrlKey){
       if (id == 'text_mac_practice'){ 
-          $('#text_mac_practice').html('<h1 class="key">行の先頭に移動</h1><h1>control + e</h1>');
+          $('#text_mac_practice').html('<h1 class="key">行の末尾に移動</h1><h1>control + e</h1>');
       } else if (id == 'text_mac_test'){
-        $('#text_mac_test').html('<h1 class="key">行の先頭に移動</h1>');
+        $('#text_mac_test').html('<h1 class="key">行の末尾に移動</h1>');
       }
     }
   }
 }); 
 
-/* $(window).keydown(function(event){ //キーが押されたら
+$(window).keydown(function(event){ //キーが押されたら
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '行の末尾に移動'){ //画面の文字と一致していたら
@@ -173,7 +173,7 @@ $(window).keydown(function(event){ //キーが押されたら
       }
     }
   }
-});  */
+}); 
 
 $(window).keydown(function(event){ //キーが押されたら
   var id = $('.main').attr('id'); 
