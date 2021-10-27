@@ -164,6 +164,7 @@ $(window).keydown(function(event){ //キーが押されたら
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '行の末尾に移動'){ //画面の文字と一致していたら
+    console.log(event.key)
     event.preventDefault(); //ブラウザのショートカットを無効
     if (event.key == 'e' && event.ctrlKey){
       if (id == 'text_mac_practice'){ 
