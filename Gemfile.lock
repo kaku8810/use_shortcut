@@ -141,7 +141,7 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.10.2)
-    rubocop (1.22.2)
+    rubocop (1.22.3)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -231,5 +231,8 @@ DEPENDENCIES
   uglifier (= 3.2.0)
   web-console (= 3.5.1)
 
+RUBY VERSION
+   ruby 2.6.8p205
+
 BUNDLED WITH
-   2.1.4
+   2.2.30
