@@ -13,7 +13,6 @@ $(window).click(function(){ //Windowがクリックされたら
 $(window).keydown(function(event){ //キーが押されたら
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
-  console.log(event.key)
   if (key == 'コピー'){ //画面の文字と一致していたら
     event.preventDefault(); //ブラウザのショートカットを無効
     if (event.key == 'c' && event.metaKey){
