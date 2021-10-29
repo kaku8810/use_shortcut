@@ -1,7 +1,7 @@
 $(window).click(function(){ //Windowがクリックされたら
   var id = $('.main').attr('id'); 
-  var element = $('.start').text()
-  if (element == '画面をクリックしてスタート！'){ //画面の文字が一致していたら
+  var key = $('.key').text()
+  if (key == '画面をクリックしてスタート！'){ //画面の文字が一致していたら
     if (id == 'text_mac_practice'){ 
       $('#text_mac_practice').html('<h1 class="key">コピー</h1><h1>⌘ + c</h1>');
     } else if (id == 'text_mac_test'){
@@ -212,9 +212,9 @@ $(window).keydown(function(event){ //キーが押されたら
     event.preventDefault(); //ブラウザのショートカットを無効
     if (event.key == 'd' && event.ctrlKey){
       if (id == 'text_mac_practice'){ 
-          $('#text_mac_practice').html('<h1 class="key">カーソルから行末まで削除</h1><h1>control + k</h1>');
+          $('#text_mac_practice').html('<h1 class="key lastkey">カーソルから行末まで削除</h1><h1>control + k</h1>');
       } else if (id == 'text_mac_test'){
-        $('#text_mac_test').html('<h1 class="key">カーソルから行末まで削除</h1>');
+        $('#text_mac_test').html('<h1 class="key lastkey">カーソルから行末まで削除</h1>');
       }
     }
   }
