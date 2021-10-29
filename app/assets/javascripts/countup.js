@@ -4,15 +4,14 @@ var min = 0;
 
 var timer;
 
-//スタート
+//　スタート
 $(window).click(function(){
   if ($('.key').text() == '画面をクリックしてスタート！'){
     timer = setInterval(countup, 10);
   }
-  
 }); 
 
-//ストップ
+// ストップ
 $(window).keydown(function(){
   if ($('.key').hasClass('lastkey')){
     clearInterval(timer);
