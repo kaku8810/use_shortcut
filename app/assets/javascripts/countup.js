@@ -12,9 +12,14 @@ $(window).click(function(){
 }); 
 
 // ストップ
-$(window).keydown(function(){
+$(window).keydown(function(event){
   if ($('.key').hasClass('lastkey')){
-    clearInterval(timer);
+    if (event.key == 'k' && event.ctrlKey){
+      clearInterval(timer);
+    }
+    else if (event.key == 'p' && event.ctrlKey){
+      clearInterval(timer);
+    }
   }
 });
 
