@@ -90,7 +90,8 @@ $(window).keydown(function(event){
   var key = $('.key').text();
   if (key == '再実行(Redo)'){
     event.preventDefault();
-    if (event.key == 'z' && event.ctrlKey && event.shiftKey){
+    console.log(event.key)
+    if (event.key == 'z' && event.shiftKey && event.ctrlKey){
       if (id == 'text_win_practice'){ 
           $('#text_win_practice').html('<h1 class="key">行の先頭に移動</h1><h1>Home</h1>');
       } else if (id == 'text_win_test'){
