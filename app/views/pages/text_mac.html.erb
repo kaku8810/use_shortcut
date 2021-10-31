@@ -1,2 +1,23 @@
-<%= link_to '練習モード', text_mac_practice_path %>
-<%= link_to 'テストモード', text_mac_test_path %>
+<div class="center jumbotron bg-white">
+  <h1 class='display-5'>Macテキスト操作</h1>
+
+  <p>
+    パソコン操作に欠かせないテキスト操作についてのショートカット
+  </p>
+</div>
+
+<div class="card-deck center">
+  <%= link_to text_mac_practice_path, class: "card bg-light" do%>
+  <div class="card-body">
+      <h4 class="card-title">練習モード</h4>
+      <p class="card-text">答え付きでショートカットを練習できます。</p>
+  </div>
+  <% end %>
+
+  <%= link_to text_mac_test_path, class: "card bg-light" do%>
+  <div class="card-body">
+    <h4 class="card-title">タイムアタックモード</h4>
+    <p class="card-text">答えなしでタイムアタックに挑戦！</p>
+  </div>
+  <% end %>
+</div>
