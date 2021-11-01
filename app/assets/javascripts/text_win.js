@@ -1,7 +1,7 @@
 $(document).on('click', '.btn', function(){
   var id = $('.main').attr('id'); 
   var key = $('.key').text()
-  if (key == '画面をクリックしてスタート！'){
+  if (key == 'クリックしてスタート！'){
     if (id == 'text_win_practice'){ 
       $('#text_win_practice').html('<h1 class="key">コピー</h1><h1>Ctrl + c</h1>');
     } else if (id == 'text_win_test'){
@@ -10,7 +10,7 @@ $(document).on('click', '.btn', function(){
   }
 }); 
     
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'コピー'){
@@ -25,7 +25,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'カット'){
@@ -40,7 +40,7 @@ $(window).keydown(function(event){
   }
 });
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'ペースト'){
@@ -55,7 +55,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '全て選択'){
@@ -70,7 +70,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '元に戻す(Undo)'){
@@ -85,7 +85,7 @@ $(window).keydown(function(event){
   }
 });
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '再実行(Redo)'){
@@ -100,7 +100,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '行の先頭に移動'){
@@ -115,7 +115,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '行の末尾に移動'){
@@ -130,7 +130,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '単語の先頭に移動'){
@@ -145,7 +145,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '単語の末尾に移動'){
@@ -160,7 +160,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '全角カタカナに変換'){
@@ -175,7 +175,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '半角カタカナに変換'){
@@ -190,7 +190,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '全角英数に変換'){
