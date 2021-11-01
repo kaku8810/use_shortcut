@@ -5,7 +5,7 @@ var min = 0;
 var timer;
 
 //　スタート
-$(window).click(function(){
+$(document).on('click', '.btn', function(){
   if ($('.key').text() == '画面をクリックしてスタート！'){
     timer = setInterval(countup, 10);
   }

@@ -1,4 +1,4 @@
-$(window).click(function(){
+$(document).on('click', '.btn', function(){
   var id = $('.main').attr('id'); 
   var key = $('.key').text()
   if (key == '画面をクリックしてスタート！'){
@@ -9,6 +9,7 @@ $(window).click(function(){
     }　
   }
 }); 
+
     
 $(window).keydown(function(event){
   var id = $('.main').attr('id'); 
