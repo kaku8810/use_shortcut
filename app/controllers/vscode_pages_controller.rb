@@ -1,0 +1,2 @@
+class VscodePagesController < ApplicationController
+end

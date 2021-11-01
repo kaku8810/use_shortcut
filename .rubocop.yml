@@ -7,3 +7,21 @@ require:
   
 AllCops:
   NewCops: enable
+  Exclude:
+    - 'config/environments/production.rb'
+    - 'bin/*'
+
+Style/Documentation:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false  
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

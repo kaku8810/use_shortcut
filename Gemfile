@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.6.8'
 
-gem 'rails',        '5.1.6'
+gem 'rails', '5.1.6'
 gem 'bootstrap', '~> 4.1.1'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
@@ -25,9 +25,9 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
   # rubocop
   gem 'rubocop', require: false
-  gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
-  gem "rubocop-rspec", require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :production do
