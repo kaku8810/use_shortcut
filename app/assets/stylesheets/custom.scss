@@ -11,7 +11,7 @@ body {
   }
 }
 
-.card{
+.card {
   color: black;
   &:hover{
     color: black;
@@ -20,3 +20,14 @@ body {
 }
 
 // 時間
+#time {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.key {
+  margin-top: 30px;
+}
