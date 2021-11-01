@@ -5,14 +5,14 @@ var min = 0;
 var timer;
 
 //　スタート
-$(window).click(function(){
-  if ($('.key').text() == '画面をクリックしてスタート！'){
+$(document).on('click', '.btn', function(){
+  if ($('.key').text() == 'クリックしてスタート！'){
     timer = setInterval(countup, 10);
   }
 }); 
 
 // ストップ
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   if ($('.key').hasClass('lastkey')){
     if (event.key == 'k' && event.ctrlKey){
       clearInterval(timer);

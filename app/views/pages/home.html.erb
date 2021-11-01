@@ -1,1 +1,26 @@
-<%= link_to 'テキスト操作', text_path %>
+<div class="center jumbotron bg-white">
+  <h1 class='display-2'>Use Shortcut</h1>
+
+  <p class='lead'>
+  ショートカットを使えば素早くかっこよく作業ができます。<br>
+  楽しくショートカットを練習しましょう！
+  </p>
+</div>
+
+<div class="card-deck">
+  <%= link_to text_path, class: "card bg-light" do%>
+  <div class="card-body">
+      <h4 class="card-title center">テキスト操作</h4>
+      <p class="card-text">様々なアプリで使用できる基本的なテキスト操作のショートカットを学べます。Windows,Mac対応です。</p>
+  </div>
+    <%= image_tag 'text.jpg', class: 'card-img-top' %>
+  <% end %>
+
+  <%= link_to '#', class: "card bg-light" do%>
+  <div class="card-body">
+    <h4 class="card-title center">Visual Studio Code</h4>
+    <p class="card-text">多機能ソースコードエディタ、vscodeのショートカットを学べます。Windows,Mac対応です。</p>
+  </div>
+    <%= image_tag 'vscode.jpg', class: 'card-img-top' %>
+  <% end %>
+</div>

@@ -1,2 +1,30 @@
-<%= link_to 'Mac', text_mac_path %>
-<%= link_to 'Windows', text_win_path %>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">テキスト操作</li>
+  </ol>
+</nav>
+
+<div class="center jumbotron bg-white">
+  <h1 class='display-5'>テキスト操作</h1>
+
+  <p>
+    パソコン操作に欠かせないテキスト操作についてのショートカット
+  </p>
+</div>
+
+<div class="card-deck center">
+  <%= link_to text_mac_path, class: "card bg-light" do%>
+  <div class="card-body">
+      <h4 class="card-title">Mac</h4>
+      <p class="card-text">Mac用のテキスト操作ショートカットを学べます。</p>
+  </div>
+  <% end %>
+
+  <%= link_to text_win_path, class: "card bg-light" do%>
+  <div class="card-body">
+    <h4 class="card-title">Windows</h4>
+    <p class="card-text">Windows用のテキスト操作ショートカットを学べます。</p>
+  </div>
+  <% end %>
+</div>

@@ -1,7 +1,7 @@
-$(window).click(function(){
+$(document).on('click', '.btn', function(){
   var id = $('.main').attr('id'); 
   var key = $('.key').text()
-  if (key == '画面をクリックしてスタート！'){
+  if (key == 'クリックしてスタート！'){
     if (id == 'text_mac_practice'){ 
       $('#text_mac_practice').html('<h1 class="key">コピー</h1><h1>⌘ + c</h1>');
     } else if (id == 'text_mac_test'){
@@ -9,8 +9,9 @@ $(window).click(function(){
     }　
   }
 }); 
+
     
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'コピー'){
@@ -25,7 +26,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'カット'){
@@ -40,7 +41,7 @@ $(window).keydown(function(event){
   }
 });
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'ペースト'){
@@ -55,7 +56,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '全て選択'){
@@ -70,7 +71,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '元に戻す(Undo)'){
@@ -85,7 +86,7 @@ $(window).keydown(function(event){
   }
 });
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '再実行(Redo)'){
@@ -100,7 +101,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '1文字進む'){
@@ -115,7 +116,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '1文字戻る'){
@@ -130,7 +131,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '1行上に移動'){
@@ -145,7 +146,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '1行下に移動'){
@@ -160,7 +161,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '行の末尾に移動'){
@@ -175,7 +176,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == '行の先頭に移動'){
@@ -190,7 +191,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'カーソルの左側の文字を削除'){
@@ -205,7 +206,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'カーソルの右側の文字を削除'){
@@ -220,7 +221,7 @@ $(window).keydown(function(event){
   }
 }); 
 
-$(window).keydown(function(event){
+$(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
   if (key == 'カーソルから行末まで削除'){
