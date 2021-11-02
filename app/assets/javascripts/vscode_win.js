@@ -228,7 +228,7 @@ $(document).keydown(function(event){
     if (event.key == 's' && event.ctrlKey){
       if (id == 'vscode_win_practice'){ 
         $('#vscode_win_practice').html('<h1>クリアしました！</h1>');
-      } else if (id == 'text_win_test'){
+      } else if (id == 'vscode_win_test'){
         $('#vscode_win_test').html('<h1>クリアしました！</h1>');
       }
     }
