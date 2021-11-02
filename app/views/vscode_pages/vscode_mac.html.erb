@@ -1,0 +1,31 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/vscode">Visual Studio Code</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Mac</li>
+  </ol>
+</nav>
+
+<div class="center jumbotron bg-white">
+  <h1 class='display-5'>Mac用Visual Studio Code</h1>
+
+  <p>
+    定番のソースコードエディタ、Visual Studio Codeのショートカット
+  </p>
+</div>
+
+<div class="card-deck center">
+  <%= link_to vscode_mac_practice_path, class: "card bg-light" do%>
+  <div class="card-body">
+      <h4 class="card-title">練習モード</h4>
+      <p class="card-text">答え付きでショートカットを練習できます。</p>
+  </div>
+  <% end %>
+
+  <%= link_to vscode_mac_test_path, class: "card bg-light" do%>
+  <div class="card-body">
+    <h4 class="card-title">タイムアタックモード</h4>
+    <p class="card-text">答えなしでタイムアタックに挑戦！</p>
+  </div>
+  <% end %>
+</div>
