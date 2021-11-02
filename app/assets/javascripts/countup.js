@@ -20,6 +20,12 @@ $(document).keydown(function(event){
     else if (event.key == 'p' && event.ctrlKey){
       clearInterval(timer);
     }
+    else if (event.key == 's' && event.metaKey){
+      clearInterval(timer);
+    }
+    else if (event.key == 's' && event.ctrlKey){
+      clearInterval(timer);
+    }
   }
 });
 

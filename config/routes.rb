@@ -7,4 +7,11 @@ Rails.application.routes.draw do
   get '/text_win', to: 'pages#text_win'
   get '/text_win_practice', to: 'pages#text_win_practice'
   get '/text_win_test', to: 'pages#text_win_test'
+  get '/vscode', to: 'vscode_pages#vscode'
+  get '/vscode_mac', to: 'vscode_pages#vscode_mac'
+  get '/vscode_mac_practice', to: 'vscode_pages#vscode_mac_practice'
+  get '/vscode_mac_test', to: 'vscode_pages#vscode_mac_test'
+  get '/vscode_win', to: 'vscode_pages#vscode_win'
+  get '/vscode_win_practice', to: 'vscode_pages#vscode_win_practice'
+  get '/vscode_win_test', to: 'vscode_pages#vscode_win_test'
 end
