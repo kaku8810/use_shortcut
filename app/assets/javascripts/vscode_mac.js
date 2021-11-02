@@ -214,7 +214,7 @@ $(document).keydown(function(event){
       if (id == 'vscode_mac_practice'){ 
         $('#vscode_mac_practice').html('<h1 class="key lastkey">ファイルを保存</h1><h1>⌘ + s</h1>');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key lastkey"></h1>');
+        $('#vscode_mac_test').html('<h1 class="key lastkey">ファイルを保存</h1>');
       }
     }
   }
