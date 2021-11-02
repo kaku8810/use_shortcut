@@ -214,7 +214,7 @@ $(document).keydown(function(event){
       if (id == 'vscode_win_practice'){ 
         $('#vscode_win_practice').html('<h1 class="key lastkey">ファイルを保存</h1><h1>Ctrl + s</h1>');
       } else if (id == 'vscode_win_test'){
-        $('#vscode_win_test').html('<h1 class="key lastkey"></h1>');
+        $('#vscode_win_test').html('<h1 class="key lastkey">ファイルを保存</h1>');
       }
     }
   }
