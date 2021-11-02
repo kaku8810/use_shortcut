@@ -228,7 +228,7 @@ $(document).keydown(function(event){
     if (event.key == 's' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
         $('#vscode_mac_practice').html('<h1>クリアしました！</h1>');
-      } else if (id == 'text_mac_test'){
+      } else if (id == 'vscode_mac_test'){
         $('#vscode_mac_test').html('<h1>クリアしました！</h1>');
       }
     }
