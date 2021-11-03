@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   root 'pages#home'
   get '/text', to: 'pages#text'
   get '/text_mac', to: 'pages#text_mac'
