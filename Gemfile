@@ -16,6 +16,7 @@ group :development, :test do
   # rspec
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
+  gem 'capybara'
 end
 
 group :development do
