@@ -14,4 +14,7 @@ Rails.application.routes.draw do
   get '/vscode_win', to: 'vscode_pages#vscode_win'
   get '/vscode_win_practice', to: 'vscode_pages#vscode_win_practice'
   get '/vscode_win_test', to: 'vscode_pages#vscode_win_test'
+
+  get '/signup', to: 'users#new'
+  resources :users
 end
