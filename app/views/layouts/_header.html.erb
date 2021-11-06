@@ -12,8 +12,8 @@
           <%= link_to "設定", '#', class: 'nav-item nav-link active' %>
           <%= link_to "ログアウト", logout_path, method: :delete, class: 'nav-item nav-link active' %>
         <% else %>
-          <%= link_to "ログイン",   login_path, class: 'nav-item nav-link' %>
-          <%= link_to "ユーザー登録", signup_path, class: 'nav-item nav-link' %>
+          <%= link_to "ログイン",   login_path, class: 'nav-item nav-link active' %>
+          <%= link_to "ユーザー登録", signup_path, class: 'nav-item nav-link active' %>
         <% end %>
       </ul>
     </div>
