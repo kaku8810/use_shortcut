@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-
   root 'pages#home'
   get '/text', to: 'pages#text'
   get '/text_mac', to: 'pages#text_mac'
@@ -18,5 +16,8 @@ Rails.application.routes.draw do
   get '/vscode_win_test', to: 'vscode_pages#vscode_win_test'
 
   get '/signup', to: 'users#new'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
   resources :users
 end
