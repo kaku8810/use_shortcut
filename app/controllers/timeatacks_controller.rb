@@ -1,0 +1,2 @@
+class TimeatacksController < ApplicationController
+end
