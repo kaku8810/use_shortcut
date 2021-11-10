@@ -230,6 +230,7 @@ $(document).keydown(function(event){
         $('#vscode_win_practice').html('<h1>クリアしました！</h1>');
       } else if (id == 'vscode_win_test'){
         $('#vscode_win_test').html('<h1>クリアしました！</h1>');
+        $('.save-time').show();
       }
     }
   }
