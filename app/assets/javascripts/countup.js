@@ -16,18 +16,24 @@ $(document).on('click', '.btn', function(){
 // ストップ
 $(document).keydown(function(event){
   if ($('.key').hasClass('lastkey')){
-    if (event.key == 'k' && event.ctrlKey){
-      clearInterval(timer);
-      clearTime = Math.round((Date.now() - startTime) / 1000);
+    var id = $('.main').attr('id'); 
+    if (id == 'text_mac_practice'){
+      if (event.key == 'k' && event.ctrlKey){
+        clearInterval(timer);
+        clearTime = Math.round((Date.now() - startTime) / 1000);
+      }
     }
     else if (event.key == 'p' && event.ctrlKey){
       clearInterval(timer);
+      clearTime = Math.round((Date.now() - startTime) / 1000);
     }
     else if (event.key == 's' && event.metaKey){
       clearInterval(timer);
+      clearTime = Math.round((Date.now() - startTime) / 1000);
     }
     else if (event.key == 's' && event.ctrlKey){
       clearInterval(timer);
+      clearTime = Math.round((Date.now() - startTime) / 1000);
     }
   }
 });
@@ -85,5 +91,6 @@ function saveTime(){
     }, // サーバーに送信するデータ
     dataType: 'json' // サーバーから返却される型
   })
+
 }
 
