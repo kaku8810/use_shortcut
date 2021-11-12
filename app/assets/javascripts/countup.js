@@ -17,23 +17,29 @@ $(document).on('click', '.btn', function(){
 $(document).keydown(function(event){
   if ($('.key').hasClass('lastkey')){
     var id = $('.main').attr('id'); 
-    if (id == 'text_mac_practice'){
+    if (id == 'text_mac_practice' || id == 'text_mac_test'){
       if (event.key == 'k' && event.ctrlKey){
         clearInterval(timer);
         clearTime = Math.round((Date.now() - startTime) / 1000);
       }
     }
-    else if (event.key == 'p' && event.ctrlKey){
-      clearInterval(timer);
-      clearTime = Math.round((Date.now() - startTime) / 1000);
+    else if (id == 'text_win_practice' || id == 'text_win_test'){
+      if (event.key == 'p' && event.ctrlKey){
+        clearInterval(timer);
+        clearTime = Math.round((Date.now() - startTime) / 1000);
+      }
     }
-    else if (event.key == 's' && event.metaKey){
-      clearInterval(timer);
-      clearTime = Math.round((Date.now() - startTime) / 1000);
+    else if (id == 'vscode_mac_practice' || id == 'vscode_mac_test'){
+      if (event.key == 's' && event.metaKey){
+        clearInterval(timer);
+        clearTime = Math.round((Date.now() - startTime) / 1000);
+      }
     }
-    else if (event.key == 's' && event.ctrlKey){
-      clearInterval(timer);
-      clearTime = Math.round((Date.now() - startTime) / 1000);
+    else if (id == 'vscode_win_practice' || id == 'vscode_win_test'){
+      if (event.key == 's' && event.ctrlKey){
+        clearInterval(timer);
+        clearTime = Math.round((Date.now() - startTime) / 1000);
+      }1
     }
   }
 });
@@ -68,6 +74,7 @@ $(document).on('click', '.save-time', function(){
 
 // Ajaxリクエスト
 
+// csrfトークンを設定
 function set_csrftoken() {
   $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
       if (!options.crossDomain) {
@@ -80,7 +87,7 @@ function set_csrftoken() {
 }
 
 function saveTime(){
-  //  ajax通信条件にCSRFトークンを入れる
+  // ajax通信条件にCSRFトークンを入れる
   set_csrftoken()
 
   $.ajax({
@@ -91,6 +98,8 @@ function saveTime(){
     }, // サーバーに送信するデータ
     dataType: 'json' // サーバーから返却される型
   })
-
+  .done(function(){
+    window.location.href = '/timeatacks'
+  })
 }
 
