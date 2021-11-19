@@ -2,7 +2,7 @@ class TimeatacksController < ApplicationController
   before_action :logged_in_user, only: [:create]
 
   def index
-    
+    @timeatacks = Timeatack.order('time ASC').limit(10)
   end
 
   def create

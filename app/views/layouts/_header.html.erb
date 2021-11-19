@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
         <%= link_to "TOP", root_path, class: 'nav-item nav-link active' %>
-        <%= link_to "ランキング", '#', class: 'nav-item nav-link active' %>
+        <%= link_to "ランキング", timeatacks_path, class: 'nav-item nav-link active' %>
         <% if logged_in? %>
           <%= link_to "設定", edit_user_path(current_user), class: 'nav-item nav-link active' %>
           <%= link_to "ログアウト", logout_path, method: :delete, class: 'nav-item nav-link active' %>
