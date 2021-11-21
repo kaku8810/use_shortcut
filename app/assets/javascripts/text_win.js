@@ -200,6 +200,7 @@ $(document).keydown(function(event){
         $('#text_win_practice').html('<h1>クリアしました！</h1>');
       } else if (id == 'text_win_test'){
         $('#text_win_test').html('<h1>クリアしました！</h1>');
+        $('.save-time').show();
       }
     }
   }

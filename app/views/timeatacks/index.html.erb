@@ -1,0 +1,26 @@
+<h1 class="center">ランキング</h1>
+<table class="table center">
+  <thread>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ユーザー名</th>
+      <th scope="col">タイム</th>
+    </tr>
+  </thread>
+  <tbody>
+    <% @timeatacks.each.with_index(1) do |time, index| %>
+      <tr>
+        <td>
+          <%= index %>
+        </td>
+        <td>
+          <%= time.user.name%>
+        </td>
+        <td>
+          <%= time.time%>
+          秒
+        </td>
+      </tr>
+    <% end %>  
+  </tbody>
+</table>

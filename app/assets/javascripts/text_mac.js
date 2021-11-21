@@ -231,6 +231,7 @@ $(document).keydown(function(event){
         $('#text_mac_practice').html('<h1>クリアしました！</h1>');
       } else if (id == 'text_mac_test'){
         $('#text_mac_test').html('<h1>クリアしました！</h1>');
+        $('.save-time').show();
       }
     }
   }
