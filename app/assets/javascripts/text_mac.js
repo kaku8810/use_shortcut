@@ -3,7 +3,7 @@ $(document).on('click', '.btn', function(){
   var key = $('.key').text()
   if (key == 'クリックしてスタート！'){
     if (id == 'text_mac_practice'){ 
-      $('#text_mac_practice').html('<h1 class="key">コピー</h1><h1>⌘ + c</h1>');
+      $('#text_mac_practice').html('<h1 class="key">コピー</h1><h1>⌘ + c</h1><img src="assets/text_mac/copy.gif">');
     } else if (id == 'text_mac_test'){
       $('#text_mac_test').html('<h1 class="key">コピー</h1>');
     }　
@@ -18,7 +18,7 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'c' && event.metaKey){
       if (id == 'text_mac_practice'){ 
-        $('#text_mac_practice').html('<h1 class="key">カット</h1><h1>⌘ + x</h1>');
+        $('#text_mac_practice').html('<h1 class="key">カット</h1><h1>⌘ + x</h1><img src="assets/text_mac/cut.gif">');
       } else if (id == 'text_mac_test'){
         $('#text_mac_test').html('<h1 class="key">カット</h1>');
       }
