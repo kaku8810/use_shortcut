@@ -3,9 +3,9 @@ $(document).on('click', '.btn', function(){
   var key = $('.key').text()
   if (key == 'クリックしてスタート！'){
     if (id == 'vscode_mac_practice'){ 
-      $('#vscode_mac_practice').html('<h1 class="key">行をコピー(未選択時)</h1><h1>⌘ + c</h1>');
+      $('#vscode_mac_practice').html('<h1 class="key">行をコピー(未選択時)</h1><h1>⌘ + c</h1><img src="assets/vscode/copy_line.gif">');
     } else if (id == 'vscode_mac_test'){
-      $('#vscode_mac_test').html('<h1 class="key">行をコピー(未選択時)</h1>');
+      $('#vscode_mac_test').html('<h1 class="key">行をコピー(未選択時)</h1><img src="assets/vscode/copy_line.gif">');
     }　
   }
 });
@@ -17,9 +17,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'c' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">行をカット(未選択時)</h1><h1>⌘ + x</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">行をカット(未選択時)</h1><h1>⌘ + x</h1><img src="assets/vscode/cut_line.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">行をカット(未選択時)</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">行をカット(未選択時)</h1><img src="assets/vscode/cut_line.gif">');
       }
     }
   }
@@ -32,9 +32,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'x' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">行にインデントを追加</h1><h1>⌘ + ]</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">行にインデントを追加</h1><h1>⌘ + ]</h1><img src="assets/vscode/add_indent.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">行にインデントを追加</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">行にインデントを追加</h1><img src="assets/vscode/add_indent.gif">');
       }
     }
   }
@@ -47,9 +47,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == ']' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">行のインデントを削除</h1><h1>⌘ + [</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">行のインデントを削除</h1><h1>⌘ + [</h1><img src="assets/vscode/del_indent.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">行のインデントを削除</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">行のインデントを削除</h1><img src="assets/vscode/del_indent.gif">');
       }
     }
   }
@@ -62,9 +62,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == '[' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">下に行を追加</h1><h1>⌘ + Enter</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">下に行を追加</h1><h1>⌘ + Enter</h1><img src="assets/vscode/under_line.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">下に行を追加</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">下に行を追加</h1><img src="assets/vscode/under_line.gif">');
       }
     }
   }
@@ -77,9 +77,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'Enter' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">上に行を追加</h1><h1>⌘ + shift + Enter</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">上に行を追加</h1><h1>⌘ + shift + Enter</h1><img src="assets/vscode/above_line.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">上に行を追加</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">上に行を追加</h1><img src="assets/vscode/above_line.gif">');
       }
     }
   }
@@ -92,9 +92,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'Enter' && event.metaKey && event.shiftKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">現在の行を削除</h1><h1>⌘ + shift + k</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">現在の行を削除</h1><h1>⌘ + shift + k</h1><img src="assets/vscode/cut_line.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">現在の行を削除</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">現在の行を削除</h1><img src="assets/vscode/cut_line.gif">');
       }
     }
   }
@@ -107,9 +107,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'k' && event.metaKey && event.shiftKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">現在の行を選択</h1><h1>⌘ + l</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">現在の行を選択</h1><h1>⌘ + l</h1><img src="assets/vscode/select_line.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">現在の行を選択</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">現在の行を選択</h1><img src="assets/vscode/select_line.gif">');
       }
     }
   }
@@ -122,9 +122,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'l' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">エディタ内を検索</h1><h1>⌘ + f</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">エディタ内を検索</h1><h1>⌘ + f</h1><img src="assets/vscode/search.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">エディタ内を検索</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">エディタ内を検索</h1><img src="assets/vscode/search.gif">');
       }
     }
   }
@@ -137,9 +137,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'f' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">エディタ内を置換</h1><h1>⌘ + ⌥ + f</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">エディタ内を置換</h1><h1>⌘ + ⌥ + f</h1><img src="assets/vscode/substitution.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">エディタ内を置換</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">エディタ内を置換</h1><img src="assets/vscode/substitution.gif">');
       }
     }
   }
@@ -152,9 +152,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'ƒ' && event.metaKey　&& event.altKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">フォルダ/ワークスペース全体を検索</h1><h1>⌘ + shift + f</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">フォルダ/ワークスペース全体を検索</h1><h1>⌘ + shift + f</h1><img src="assets/vscode/whole_search.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">フォルダ/ワークスペース全体を検索</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">フォルダ/ワークスペース全体を検索</h1><img src="assets/vscode/whole_search.gif">');
       }
     }
   }
@@ -167,9 +167,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'f' && event.metaKey && event.shiftKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">フォルダ/ワークスペース全体を置換</h1><h1>⌘ + shift + h</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">フォルダ/ワークスペース全体を置換</h1><h1>⌘ + shift + h</h1><img src="assets/vscode/whole_substitution.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">フォルダ/ワークスペース全体を置換</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">フォルダ/ワークスペース全体を置換</h1><img src="assets/vscode/whole_substitution.gif">');
       }
     }
   }
@@ -182,9 +182,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'h' && event.metaKey && event.shiftKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">ファイルを名前で検索</h1><h1>⌘ + p</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">ファイルを名前で検索</h1><h1>⌘ + p</h1><img src="assets/vscode/file_search.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">ファイルを名前で検索</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">ファイルを名前で検索</h1><img src="assets/vscode/file_search.gif">');
       }
     }
   }
@@ -197,9 +197,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'p' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key">ファイルを開く</h1><h1>⌘ + o</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key">ファイルを開く</h1><h1>⌘ + o</h1><img src="assets/vscode/open.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key">ファイルを開く</h1>');
+        $('#vscode_mac_test').html('<h1 class="key">ファイルを開く</h1><img src="assets/vscode/open.gif">');
       }
     }
   }
@@ -212,9 +212,9 @@ $(document).keydown(function(event){
     event.preventDefault();
     if (event.key == 'o' && event.metaKey){
       if (id == 'vscode_mac_practice'){ 
-        $('#vscode_mac_practice').html('<h1 class="key lastkey">ファイルを保存</h1><h1>⌘ + s</h1>');
+        $('#vscode_mac_practice').html('<h1 class="key lastkey">ファイルを保存</h1><h1>⌘ + s</h1><img src="assets/vscode/save.gif">');
       } else if (id == 'vscode_mac_test'){
-        $('#vscode_mac_test').html('<h1 class="key lastkey">ファイルを保存</h1>');
+        $('#vscode_mac_test').html('<h1 class="key lastkey">ファイルを保存</h1><img src="assets/vscode/save.gif">');
       }
     }
   }
