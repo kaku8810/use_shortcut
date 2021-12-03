@@ -10,7 +10,6 @@ $(document).on('click', '.btn', function(){
   }
 }); 
 
-    
 $(document).keydown(function(event){
   var id = $('.main').attr('id'); 
   var key = $('.key').text();
