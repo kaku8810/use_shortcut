@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :feature do
-  let(:user) { create(:user) }
 
   describe 'ログイン前' do
     describe 'ユーザー新規作成' do
