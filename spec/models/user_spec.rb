@@ -39,14 +39,14 @@ RSpec.describe User, type: :model do
 
   context 'emailが255字以下の場合' do
     it '有効であること' do
-      user.email = 'a' * 243 +'@example.com'
+      user.email = "#{'a' * 243}@example.com"
       expect(user).to be_valid
     end
   end
 
   context 'emailが256字以上の場合' do
     it '無効であること' do
-      user.email = 'a' * 244 +'@example.com'
+      user.email = "#{'a' * 244}@example.com"
       expect(user).to be_invalid
     end
   end

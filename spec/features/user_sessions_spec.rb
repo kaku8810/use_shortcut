@@ -10,7 +10,7 @@ RSpec.describe 'UserSessions', type: :feature do
         fill_in 'session[email]', with: user.email
         fill_in 'session[password]', with: user.password
         click_button 'ログイン'
-        expect(current_path).to eq root_path
+        expect(page).to have_current_path root_path, ignore_query: true
         expect(page).to have_no_link 'ログイン'
         expect(page).to have_link 'ログアウト', href: logout_path
       end
@@ -22,7 +22,7 @@ RSpec.describe 'UserSessions', type: :feature do
         fill_in 'session[email]', with: ''
         fill_in 'session[password]', with: 'password'
         click_button 'ログイン'
-        expect(current_path).to eq login_path
+        expect(page).to have_current_path login_path, ignore_query: true
         expect(page).to have_content 'Invalid email/password combination'
       end
     end
@@ -36,7 +36,7 @@ RSpec.describe 'UserSessions', type: :feature do
         fill_in 'session[password]', with: user.password
         click_button 'ログイン'
         click_link 'ログアウト'
-        expect(current_path).to eq root_path
+        expect(page).to have_current_path root_path, ignore_query: true
         expect(page).to have_no_link 'ログアウト'
         expect(page).to have_link 'ログイン', href: login_path
       end

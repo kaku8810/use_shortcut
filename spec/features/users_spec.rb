@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :feature do
-
   describe 'ログイン前' do
     describe 'ユーザー新規作成' do
       context 'フォームの入力値が正常' do
@@ -12,7 +11,7 @@ RSpec.describe User, type: :feature do
           fill_in 'user[password]', with: 'password'
           fill_in 'user[password_confirmation]', with: 'password'
           click_button 'ユーザー登録'
-          expect(current_path).to eq root_path
+          expect(page).to have_current_path root_path, ignore_query: true
           expect(page).to have_content 'ユーザー登録が成功しました!'
         end
       end
@@ -25,7 +24,7 @@ RSpec.describe User, type: :feature do
           fill_in 'user[password]', with: 'password'
           fill_in 'user[password_confirmation]', with: 'password'
           click_button 'ユーザー登録'
-          expect(current_path).to eq users_path
+          expect(page).to have_current_path users_path, ignore_query: true
           expect(page).to have_content "Name can't be blank"
         end
       end
@@ -38,7 +37,7 @@ RSpec.describe User, type: :feature do
           fill_in 'user[password]', with: 'password'
           fill_in 'user[password_confirmation]', with: 'password'
           click_button 'ユーザー登録'
-          expect(current_path).to eq users_path
+          expect(page).to have_current_path users_path, ignore_query: true
           expect(page).to have_content "Email can't be blank"
         end
       end
@@ -51,8 +50,8 @@ RSpec.describe User, type: :feature do
           fill_in 'user[password]', with: 'hoge'
           fill_in 'user[password_confirmation]', with: 'hoge'
           click_button 'ユーザー登録'
-          expect(current_path).to eq users_path
-          expect(page).to have_content "Password is too short (minimum is 6 characters)"
+          expect(page).to have_current_path users_path, ignore_query: true
+          expect(page).to have_content 'Password is too short (minimum is 6 characters)'
         end
       end
 
@@ -64,11 +63,10 @@ RSpec.describe User, type: :feature do
           fill_in 'user[password]', with: 'password'
           fill_in 'user[password_confirmation]', with: 'hogehoge'
           click_button 'ユーザー登録'
-          expect(current_path).to eq users_path
+          expect(page).to have_current_path users_path, ignore_query: true
           expect(page).to have_content "Password confirmation doesn't match Password"
         end
       end
-      
     end
   end
 end

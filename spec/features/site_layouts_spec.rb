@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'SiteLayouts', type: :feature do
-
   describe 'レイアウト' do
     it 'TOPページ' do
       visit root_path
@@ -49,6 +48,5 @@ RSpec.describe 'SiteLayouts', type: :feature do
       expect(page).to have_link '練習モード', href: vscode_win_practice_path
       expect(page).to have_link 'タイムアタックモード', href: vscode_win_test_path
     end
-
   end
 end

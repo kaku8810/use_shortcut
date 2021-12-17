@@ -6,7 +6,7 @@ RSpec.describe 'Ranking', type: :feature do
       create_list(:timeatack, 11)
       visit root_path
       click_on 'ランキング'
-      expect(current_path).to eq timeatacks_path
+      expect(page).to have_current_path timeatacks_path, ignore_query: true
       expect(page).to have_selector 'h1', text: 'ランキング'
       within 'tbody' do
         expect(page.all('tr').count).to eq 10
