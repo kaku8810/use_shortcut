@@ -7,14 +7,12 @@ class TimeatacksController < ApplicationController
 
   def create
     @timeatack = current_user.timeatacks.build(timeatack_params)
-    if @timeatack.save
-      flash[:success] = 'タイムが記録されました！'
-    end
-    
+    flash[:success] = 'タイムが記録されました！' if @timeatack.save
   end
 
   private
-    def timeatack_params
-      params.require(:timeatack).permit(:time)
-    end
+
+  def timeatack_params
+    params.require(:timeatack).permit(:time)
+  end
 end

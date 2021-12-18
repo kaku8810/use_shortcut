@@ -1,24 +1,40 @@
-# README
+url
+トップ画像
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# サービス概要
+なかなか覚えられないショートカットをゲーム感覚で練習できるサービス
 
-Things you may want to cover:
+# 機能一覧
+- ショートカット練習モード
+  - テキスト操作
+  - VSCode
 
-* Ruby version
+- ショートカットタイムアタックモード
+  - テキスト操作
+  - VSCode
 
-* System dependencies
+- Windows,Mac対応
+- ユーザー登録、ログイン機能
+- タイムアタック記録機能
+- ランキング機能
 
-* Configuration
+# 使用技術
+## バックエンド
+- Ruby
+- Rails
 
-* Database creation
+## フロントエンド
+- HTML
+- SCSS
+- JavaScript
+- jQuery
+- Bootstrap 4
 
-* Database initialization
+## インフラ
+- Heroku
+- Puma
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- GitFlowを用いた疑似チーム開発
+- Rspec
+- Rubocop

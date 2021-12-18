@@ -18,6 +18,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
   gem 'capybara'
+  gem 'webdrivers'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :development do
