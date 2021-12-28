@@ -6,7 +6,7 @@ $(document).on('click', '.btn', function(){
       $('#text_mac_practice').html('<h1 class="key">コピー</h1><h1>⌘ + c</h1><img src="assets/text/copy.gif">');
     } else if (id == 'text_mac_test'){
       $('#text_mac_test').html('<h1 class="key">コピー</h1><img src="assets/text/copy.gif">');
-    }　
+    }
   }
 }); 
 

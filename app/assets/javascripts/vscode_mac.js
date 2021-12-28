@@ -6,7 +6,7 @@ $(document).on('click', '.btn', function(){
       $('#vscode_mac_practice').html('<h1 class="key">行をコピー(未選択時)</h1><h1>⌘ + c</h1><img src="assets/vscode/copy_line.gif">');
     } else if (id == 'vscode_mac_test'){
       $('#vscode_mac_test').html('<h1 class="key">行をコピー(未選択時)</h1><img src="assets/vscode/copy_line.gif">');
-    }　
+    }
   }
 });
 

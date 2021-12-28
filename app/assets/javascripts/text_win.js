@@ -6,7 +6,7 @@ $(document).on('click', '.btn', function(){
       $('#text_win_practice').html('<h1 class="key">コピー</h1><h1>Ctrl + c</h1><img src="assets/text/copy.gif">');
     } else if (id == 'text_win_test'){
       $('#text_win_test').html('<h1 class="key">コピー</h1><img src="assets/text/copy.gif">');
-    }　
+    }
   }
 }); 
     
