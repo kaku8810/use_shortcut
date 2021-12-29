@@ -17,9 +17,10 @@ https://www.use-shortcut.com/
   - VSCode
 
 - タイムアタック記録機能
+![スクリーンショット 2021-12-29 15 35 34](https://user-images.githubusercontent.com/59243400/147633872-f25205ee-dc19-4148-a701-095e70991320.png)
 
 - ランキング機能
-![スクリーンショット 2021-12-29 14 53 40](https://user-images.githubusercontent.com/59243400/147631529-337c7553-1293-4612-98a4-33e513a7c0e4.png)
+![スクリーンショット 2021-12-29 15 27 10](https://user-images.githubusercontent.com/59243400/147633385-bf2ae11e-2f39-4f29-8e6a-8ab481e63a7e.png)
 - ユーザー登録、ログイン機能
 - Windows,Mac対応
 
