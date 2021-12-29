@@ -1,11 +1,11 @@
-User.create!(name: 'Example User',
-             email: 'example@railstutorial.org',
+User.create!(name: '山田太郎',
+             email: 'example@hogehoge.org',
              password: 'foobar',
              password_confirmation: 'foobar',
              admin: true)
 
-User.create!(name: 'Example User2',
-             email: 'example2@railstutorial.org',
+User.create!(name: '田中花子',
+             email: 'example2@hogehoge.org',
              password: 'foobar',
              password_confirmation: 'foobar')
 
