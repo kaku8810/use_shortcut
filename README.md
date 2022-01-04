@@ -16,7 +16,7 @@ https://www.use-shortcut.com/
   - テキスト操作
   - VSCode
 
-- タイムアタック記録機能
+- タイムアタック記録機能（ユーザー登録が必要）
 ![スクリーンショット 2021-12-29 15 35 34](https://user-images.githubusercontent.com/59243400/147633872-f25205ee-dc19-4148-a701-095e70991320.png)
 
 - ランキング機能
